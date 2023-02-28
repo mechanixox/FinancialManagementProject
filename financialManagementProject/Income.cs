@@ -8,5 +8,6 @@ namespace financialManagementProject
 {
     class Income
     {
+        public int Amount { get; set; }
     }
 }

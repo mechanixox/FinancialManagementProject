@@ -10,7 +10,7 @@ namespace financialManagementProject
     {
         public static int CASH_BALANCE = 99500;
 
-        public int Amount { get; set; };
+        public int Amount { get; set; }
     }
     public CashBalance(int amount)
     {
