@@ -1,0 +1,15 @@
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\bin\Debug\net6.0\FinancialManagementProj.exe
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\bin\Debug\net6.0\FinancialManagementProj.deps.json
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\bin\Debug\net6.0\FinancialManagementProj.runtimeconfig.json
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\bin\Debug\net6.0\FinancialManagementProj.dll
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\bin\Debug\net6.0\FinancialManagementProj.pdb
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.csproj.AssemblyReference.cache
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.AssemblyInfoInputs.cache
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.AssemblyInfo.cs
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.csproj.CoreCompileInputs.cache
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.dll
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\refint\FinancialManagementProj.dll
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.pdb
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\FinancialManagementProj.genruntimeconfig.cache
+C:\Users\chani\Documents\1. VSU\2. Programming\Event Driven Programming\FinancialManagementProj\obj\Debug\net6.0\ref\FinancialManagementProj.dll

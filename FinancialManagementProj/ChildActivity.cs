@@ -1,4 +1,4 @@
-﻿enum Activity
+﻿enum ChildActivity
 {
     Studying, Working, None
 }

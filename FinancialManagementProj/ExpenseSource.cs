@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinancialManagementProj
 {
-    class IncomeSource
+    class ExpenseSource
     {
         public int Id { get; set; } // identifies uniquely the income source
         public string SourceName { get; set; } //describes the income source
@@ -14,7 +14,7 @@ namespace FinancialManagementProj
         public DateTime DateAdded { get; set; } // date for which the income item was received
         public string? Category { get; set; } //where income item belongs
 
-        public IncomeSource(int id, string sourceName, decimal amount, DateTime dateAdded, string category)
+        public ExpenseSource(int id, string sourceName, decimal amount, DateTime dateAdded, string category)
         {
             this.Id = id;
             this.SourceName = sourceName;
@@ -24,7 +24,7 @@ namespace FinancialManagementProj
         }
 
         public int SourceId;
-        public IncomeSource(int sourceId, string sourceName, decimal amount, DateTime dateAdded)
+        public ExpenseSource(int sourceId, string sourceName, decimal amount, DateTime dateAdded)
         {
             this.SourceId = sourceId;
             SourceName = sourceName;
@@ -33,4 +33,3 @@ namespace FinancialManagementProj
         }
     }
 }
-

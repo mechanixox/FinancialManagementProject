@@ -8,6 +8,7 @@ namespace FinancialManagementProj
 {
     abstract class User
     {
+        public int Id { get; private set; } 
         public string? Name { get; private set; }
         public MemberType Member { get; set; }
         public string ContactInfo { get; set; }

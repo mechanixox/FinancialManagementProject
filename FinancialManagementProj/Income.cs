@@ -6,35 +6,66 @@ using System.Threading.Tasks;
 
 namespace FinancialManagementProj
 {
-    public class Income
+    class Income
     {
-        public string? IncomeSource { get; set; }
-        public double Amount { get; set; }
-        public DateTime Date { get; set; }
-        private double currentIncome { get; set; }
+        public List<IncomeSource> incomes;
+        public int sourceId;
 
-        public Income(string incomeSource, int amount, DateTime date) 
+        public Income()
         {
-            this.IncomeSource = incomeSource;
-            this.Amount = 0;
-            this.Date = date;
-            this.currentIncome = 0;
+            this.incomes = new List<IncomeSource>();
+            this.sourceId = 1; //keeps track of the unique income source ID
         }
 
-        public void AddIncome(string incomeSource, int amount, DateTime date)
+        public void AddIncome(string sourceName, decimal amount, DateTime date)
         {
-            this.currentIncome += amount;
+            IncomeSource income = new IncomeSource(this.sourceId, sourceName, amount, date);
+            this.incomes.Add(income);
+            this.sourceId++;
         }
 
-        public double GetTotalIncome()
+        public decimal GetTotalIncome()
         {
-            double totalIncome = 0;
-            if(currentIncome > 0)
-                totalIncome += currentIncome;
+            decimal totalIncome = 0;
+            foreach (IncomeSource income in this.incomes)
+            {
+                totalIncome += income.Amount;
+            }
             return totalIncome;
         }
 
+        public decimal GetAverageIncome()
+        {
+            decimal totalIncome = this.GetTotalIncome();
+            int numMonths = (DateTime.Today.Year - this.incomes[0].DateAdded.Year) * 12 + DateTime.Today.Month - this.incomes[0].DateAdded.Month + 1;
+            decimal averageIncome = totalIncome / numMonths;
+            return averageIncome;
+        }
+
+        public decimal GetIncomeByCategory(string category)
+        {
+            decimal totalIncome = 0;
+            foreach (IncomeSource income in this.incomes)
+            {
+                if (income.Category == category)
+                {
+                    totalIncome += income.Amount;
+                }
+            }
+            return totalIncome;
+        }
+
+        public decimal GetIncomeByMonth(int month, int year)
+        {
+            decimal totalIncome = 0;
+            foreach (IncomeSource income in this.incomes)
+            {
+                if (income.DateAdded.Month == month && income.DateAdded.Year == year)
+                {
+                    totalIncome += income.Amount;
+                }
+            }
+            return totalIncome;
+        }
     }
-
-
 }
