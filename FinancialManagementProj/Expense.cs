@@ -16,6 +16,8 @@ namespace FinancialManagementProj
         public List<ExpenseSource> expenses;
         private int sourceId;
 
+        //private decimal budget { get; set; }
+
         public Expense()
         {
             this.expenses = new List<ExpenseSource>();
@@ -40,19 +42,35 @@ namespace FinancialManagementProj
             this.sourceId++;
         }
 
-       /* 
-        public void RemoveExpense(int expenseId)
+        /* 
+         public void RemoveExpense(int expenseId)
+         {
+             Expense expenseToRemove = Budget.expenses.FirstOrDefault(e => e.Id == expenseId);
+
+             if (expenseToRemove != null)
+             {
+                 Budget.expenses.Remove(expenseToRemove);
+             }
+         }
+        */
+        public decimal GetTotalExpenses()
         {
-            Expense expenseToRemove = Budget.expenses.FirstOrDefault(e => e.Id == expenseId);
+            decimal totalExpenses = 0;
 
-            if (expenseToRemove != null)
+            foreach (Expense expense in budget.expenses)
             {
-                Budget.expenses.Remove(expenseToRemove);
+                totalExpenses += expense.Amount;
             }
+
+            return totalExpenses;
         }
-       */
 
+        public Expense GetExpenseById(int expenseId)
+        {
+            Expense expense = budget.expenses.FirstOrDefault(e => e.Id == expenseId);
 
+            return expense;
+        }
     }
 
 }
