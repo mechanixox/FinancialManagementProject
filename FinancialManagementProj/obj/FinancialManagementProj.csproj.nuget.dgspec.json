@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Download\\FinancialManagementProj\\FinancialManagementProj.csproj": {}
+    "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Git_FinancialManagementProject\\FinancialManagementProj\\FinancialManagementProj.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Download\\FinancialManagementProj\\FinancialManagementProj.csproj": {
+    "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Git_FinancialManagementProject\\FinancialManagementProj\\FinancialManagementProj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Download\\FinancialManagementProj\\FinancialManagementProj.csproj",
+        "projectUniqueName": "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Git_FinancialManagementProject\\FinancialManagementProj\\FinancialManagementProj.csproj",
         "projectName": "FinancialManagementProj",
-        "projectPath": "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Download\\FinancialManagementProj\\FinancialManagementProj.csproj",
+        "projectPath": "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Git_FinancialManagementProject\\FinancialManagementProj\\FinancialManagementProj.csproj",
         "packagesPath": "C:\\Users\\chani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Download\\FinancialManagementProj\\obj\\",
+        "outputPath": "C:\\Users\\chani\\Documents\\1. VSU\\2. Programming\\Event Driven Programming\\Git_FinancialManagementProject\\FinancialManagementProj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chani\\AppData\\Roaming\\NuGet\\NuGet.Config",

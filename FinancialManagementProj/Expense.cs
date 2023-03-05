@@ -22,14 +22,14 @@ namespace FinancialManagementProj
             this.sourceId = 1;
         }
 
-        public int GetNextExpenseId()
+        public int GetNextExpenseId(Budget budget)
         {
-            if (Budget.expenses.Count == 0)
+            if (budget.expenses.Count == 0)
             {
                 return 1;
             }
 
-            int lastExpenseId = Budget.expenses.Last().Id;
+            int lastExpenseId = budget.expenses.Last().Id;
             return lastExpenseId + 1;
         }
 

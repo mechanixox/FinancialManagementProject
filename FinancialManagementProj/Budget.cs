@@ -10,9 +10,9 @@ namespace FinancialManagementProj
     {
         private decimal totalIncome;
         private decimal totalExpense;
-        private List<IncomeSource> incomes;
-        private List<ExpenseSource> expenses;
-        private int sourceId;
+        public List<IncomeSource> incomes;
+        public List<ExpenseSource> expenses;
+        public int sourceId;
         public Budget()
         {
             totalIncome = 0;
