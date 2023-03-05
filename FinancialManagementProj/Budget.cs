@@ -12,7 +12,7 @@ namespace FinancialManagementProj
         private decimal totalExpense;
         private List<IncomeSource> incomes;
         private List<ExpenseSource> expenses;
-
+        private int sourceId;
         public Budget()
         {
             totalIncome = 0;
