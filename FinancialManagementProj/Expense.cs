@@ -36,12 +36,8 @@ namespace FinancialManagementProj
         public void AddExpense(string sourceName, decimal amount, DateTime date)
         {
             ExpenseSource expense = new ExpenseSource(this.sourceId, sourceName, amount, date);
-
-            Budget.expenses.Add(expense);
-            //this.expenses.Add(expense);
+            this.expenses.Add(expense);
             this.sourceId++;
-
-           
         }
 
        /* 
