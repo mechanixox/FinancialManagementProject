@@ -10,9 +10,17 @@ namespace FinancialManagementProj
     {
         public int Id { get; set; }
         public string? SourceName { get; set; }
-        public double Amount { get; set; }
+        public decimal Amount { get; set; }
         public DateTime Date { get; set; }
 
+        public List<ExpenseSource> expenses;
+        private int sourceId;
+
+        public Expense()
+        {
+            this.expenses = new List<ExpenseSource>();
+            this.sourceId = 1;
+        }
 
         public int GetNextExpenseId()
         {
@@ -25,19 +33,18 @@ namespace FinancialManagementProj
             return lastExpenseId + 1;
         }
 
-        public void AddExpense(string sourceName, double amount, DateTime date)
+        public void AddExpense(string sourceName, decimal amount, DateTime date)
         {
-            Expense expense = new Expense
-            {
-                Id = GetNextExpenseId(),
-                SourceName = sourceName,
-                Amount = amount,
-                Date = date,
-            };
+            ExpenseSource expense = new ExpenseSource(this.sourceId, sourceName, amount, date);
 
             Budget.expenses.Add(expense);
+            //this.expenses.Add(expense);
+            this.sourceId++;
+
+           
         }
 
+       /* 
         public void RemoveExpense(int expenseId)
         {
             Expense expenseToRemove = Budget.expenses.FirstOrDefault(e => e.Id == expenseId);
@@ -47,6 +54,7 @@ namespace FinancialManagementProj
                 Budget.expenses.Remove(expenseToRemove);
             }
         }
+       */
 
 
     }
