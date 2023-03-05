@@ -9,7 +9,7 @@ namespace FinancialManagementProj
     class Expense
     {
         public int Id { get; set; }
-        public string? Description { get; set; }
+        public string? SourceName { get; set; }
         public double Amount { get; set; }
         public DateTime Date { get; set; }
 
@@ -25,12 +25,12 @@ namespace FinancialManagementProj
             return lastExpenseId + 1;
         }
 
-        public void AddExpense(string description, double amount, DateTime date)
+        public void AddExpense(string sourceName, double amount, DateTime date)
         {
             Expense expense = new Expense
             {
                 Id = GetNextExpenseId(),
-                Description = description,
+                SourceName = sourceName,
                 Amount = amount,
                 Date = date,
             };

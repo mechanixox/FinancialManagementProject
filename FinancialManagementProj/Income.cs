@@ -9,7 +9,7 @@ namespace FinancialManagementProj
     class Income
     {
         public List<IncomeSource> incomes;
-        public int sourceId;
+        private int sourceId;
 
         public Income()
         {

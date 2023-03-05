@@ -28,11 +28,11 @@ namespace FinancialManagementProj
             totalIncome += amount;
         }
 
-        public void AddExpense(string description, double amount, DateTime date)
+        public void AddExpense(string sourceName, decimal amount, DateTime date)
         {
-            ExpenseSource expense = new ExpenseSource(description, amount, date);
+            ExpenseSource expense = new ExpenseSource(this.sourceId, sourceName, amount, date);
             expenses.Add(expense);
-            totalExpense += amount;
+            totalExpense = totalExpense + amount;
         }
 
         public decimal GetTotalIncome()
