@@ -9,7 +9,7 @@ namespace FinancialManagementProj
     class Parent : User
     {
         public string Occupation { get; private set; }
-        public Parent(string name, MemberType member, string contactInfo, string birthDate, string occupation) : base(name, member, contactInfo, birthDate)
+        public Parent(int id, string name, MemberType member, string contactInfo, string birthDate, string occupation) : base(name, member, contactInfo, birthDate)
         {
             this.Occupation = occupation;
         }

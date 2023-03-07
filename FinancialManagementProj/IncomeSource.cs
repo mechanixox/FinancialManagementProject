@@ -23,14 +23,14 @@ namespace FinancialManagementProj
             this.Category = category;
         }
 
-        public int SourceId;
+       /* public int SourceId;
         public IncomeSource(int sourceId, string sourceName, decimal amount, DateTime dateAdded)
         {
             this.SourceId = sourceId;
             SourceName = sourceName;
             Amount = amount;
             DateAdded = dateAdded;
-        }
+        }*/
     }
 }
 

@@ -35,9 +35,9 @@ namespace FinancialManagementProj
             return lastExpenseId + 1;
         }
 
-        public void AddExpense(string sourceName, decimal amount, DateTime date)
+        public void AddExpense(string sourceName, decimal amount, DateTime date, string Category)
         {
-            ExpenseSource expense = new ExpenseSource(this.sourceId, sourceName, amount, date);
+            ExpenseSource expense = new ExpenseSource(this.sourceId, sourceName, amount, date, category);
             this.expenses.Add(expense);
             this.sourceId++;
         }

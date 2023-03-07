@@ -1,4 +1,4 @@
-﻿enum MemberType
+﻿public enum MemberType
 {
     Parent, Child
 }

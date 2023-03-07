@@ -22,7 +22,7 @@ namespace FinancialManagementProj
             this.DateAdded = dateAdded;
             this.Category = category;
         }
-
+        /*
         public int SourceId;
         public ExpenseSource(int sourceId, string sourceName, decimal amount, DateTime dateAdded)
         {
@@ -30,6 +30,6 @@ namespace FinancialManagementProj
             SourceName = sourceName;
             Amount = amount;
             DateAdded = dateAdded;
-        }
+        }*/
     }
 }

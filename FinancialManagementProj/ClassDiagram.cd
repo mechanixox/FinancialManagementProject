@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FinancialManagementProj.Budget" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgACQAABABAgAACQAoBAAAAAAEABAA=</HashCode>
+      <FileName>Budget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinancialManagementProj.Child">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Child.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Activity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FinancialManagementProj.Expense" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAABAAAALAAEAAQAABAAAAAAEAAAA=</HashCode>
+      <FileName>Expense.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinancialManagementProj.ExpenseSource" Collapsed="true">
+    <Position X="14.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAADAAAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>ExpenseSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinancialManagementProj.Income" Collapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAABAACAJAAAAAQAgAAAAAAAAAAAI=</HashCode>
+      <FileName>Income.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinancialManagementProj.IncomeSource" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAADAAAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>IncomeSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinancialManagementProj.Parent" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Parent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinancialManagementProj.Transaction" Collapsed="true">
+    <Position X="12.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAwEAAAAAAAAACAAAAAAAABAAAQAAAAAAA=</HashCode>
+      <FileName>Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinancialManagementProj.User" Collapsed="true">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Member" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="ChildActivity" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAIAAEAAAA=</HashCode>
+      <FileName>ChildActivity.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MemberType" Collapsed="true">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MemberType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

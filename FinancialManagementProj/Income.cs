@@ -8,6 +8,7 @@ namespace FinancialManagementProj
 {
     class Income
     {
+        public List<IncomeSource> job;
         public List<IncomeSource> incomes;
         private int sourceId;
 
@@ -19,7 +20,7 @@ namespace FinancialManagementProj
 
         public void AddIncome(string sourceName, decimal amount, DateTime date)
         {
-            IncomeSource income = new IncomeSource(this.sourceId, sourceName, amount, date);
+            IncomeSource income = new IncomeSource(this.sourceId, sourceName, amount, date, category);
             this.incomes.Add(income);
             this.sourceId++;
         }

@@ -9,7 +9,7 @@ namespace FinancialManagementProj
     class Child : User
     {
         public ChildActivity Activity { get; private set; }
-        public Child(string name, MemberType member, string contactInfo, string birthDate, ChildActivity activity) : base(name, member, contactInfo, birthDate)
+        public Child(int id, string name, MemberType member, string contactInfo, string birthDate, ChildActivity activity) : base(id, name, member, contactInfo, birthDate)
         {
             this.Activity = activity;
         }

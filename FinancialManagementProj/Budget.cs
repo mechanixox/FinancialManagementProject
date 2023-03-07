@@ -6,33 +6,45 @@ using System.Threading.Tasks;
 
 namespace FinancialManagementProj
 {
-    class Budget
+    class Budget 
     {
-        private decimal totalIncome;
-        private decimal totalExpense;
+        public int Id { get; set; }
+        public decimal totalIncome { get; set; }
+        public decimal totalExpenses { get; set; }
+        public DateTime Date { get; set; }
         public List<IncomeSource> incomes;
         public List<ExpenseSource> expenses;
         public int sourceId;
-        public Budget()
+        public Budget(int id, DateTime date, Income income)
         {
-            totalIncome = 0;
-            totalExpense = 0;
+            this.Id = id;
+            this.Date = date;
+            this.totalIncome = income.GetTotalIncome();
             incomes = new List<IncomeSource>();
             expenses = new List<ExpenseSource>();
         }
 
-        public void AddIncome(string sourceName, decimal amount, DateTime date)
+        public Budget(int id, DateTime date, Expense expense)
+        {
+            this.Id = id;
+            this.Date = date;
+            this.totalExpenses = expense.GetTotalExpenses();
+            incomes = new List<IncomeSource>();
+            expenses = new List<ExpenseSource>();
+        }
+
+        public void AddIncomeToBudget(string sourceName, decimal amount, DateTime date)
         {
             IncomeSource income = new IncomeSource(this.sourceId, sourceName, amount, date);
             incomes.Add(income);
-            totalIncome += amount;
+            totalIncome += GetTotalIncome();
         }
 
-        public void AddExpense(string sourceName, decimal amount, DateTime date)
+        public void AddExpenseToBudget(string sourceName, decimal amount, DateTime date)
         {
             ExpenseSource expense = new ExpenseSource(this.sourceId, sourceName, amount, date);
             expenses.Add(expense);
-            totalExpense = totalExpense + amount;
+            totalIncome -= GetTotalExpense();
         }
 
         public decimal GetTotalIncome()
